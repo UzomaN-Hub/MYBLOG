@@ -24,7 +24,7 @@ import { Button } from "@/components/ui/button";
 const navigation = [
   {
     name: "Dashboard",
-    href: "/",
+    href: "/dashboard",
     icon: LayoutDashboard,
   },
   {

@@ -72,7 +72,7 @@ export default function LoginPage() {
           <CardHeader className="space-y-1 pb-6">
             <CardTitle className="text-2xl font-bold text-center">Welcome Back</CardTitle>
             <CardDescription className="text-center text-base">
-              Sign in to access your dashboard
+              Sign in to access the dashboard
             </CardDescription>
           </CardHeader>
           
@@ -127,7 +127,7 @@ export default function LoginPage() {
               </div>
             </div>
 
-            <div className="flex items-center justify-end">
+            <div className="flex items-center justify-end cursor-pointer">
               <Link 
                 href="/forgot-password" 
                 className="text-sm text-emerald-600 hover:text-emerald-700 font-medium transition-colors"
@@ -140,7 +140,7 @@ export default function LoginPage() {
           <CardFooter className="flex flex-col space-y-4 pt-2">
             <Button 
               onClick={handleSubmit}
-              className="w-full h-12 bg-emerald-600 hover:bg-emerald-700 text-white font-medium shadow-lg hover:shadow-xl transition-all" 
+              className="w-full h-12 cursor-pointer bg-emerald-600 hover:bg-emerald-700 text-white font-medium shadow-lg hover:shadow-xl transition-all" 
               disabled={isLoading}
             >
               {isLoading ? (
@@ -153,7 +153,7 @@ export default function LoginPage() {
               )}
             </Button>
 
-            <div className="relative w-full">
+            {/* <div className="relative w-full">
               <div className="absolute inset-0 flex items-center">
                 <span className="w-full border-t border-gray-200" />
               </div>
@@ -172,7 +172,7 @@ export default function LoginPage() {
               >
                 Create Admin Account
               </Button>
-            </Link>
+            </Link> */}
           </CardFooter>
         </Card>
 

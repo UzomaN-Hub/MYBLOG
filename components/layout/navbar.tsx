@@ -1,8 +1,9 @@
 "use client";
 
-import { Search, BadgeQuestionMark, Menu, X } from "lucide-react";
+import { Search, BadgeQuestionMark, Menu, X, Lock } from "lucide-react";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import NavDropdown from "../layout/nav-dropdown";
@@ -80,9 +81,17 @@ export default function Navbar() {
                 className="w-auto border border-gray-300 rounded-md py-1 pl-10"
               />
             </div>
-            <Link href="/faq" className="flex items-center justify-center gap-1 hover:text-green-600 transition-colors">
+            {/* <Link href="/faq" className="flex items-center justify-center gap-1 hover:text-green-600 transition-colors">
               <BadgeQuestionMark size={20} className="text-green-500" />
               <h2 className="text-sm">FAQS</h2>
+            </Link> */}
+
+            <Link href="/login" className="flex items-center justify-center">
+              
+              <Button className="bg-green-700 hover:bg-green-800 transition-colors cursor-pointer">
+                <Lock size={20} />
+                Admin
+                </Button>
             </Link>
           </div>
 

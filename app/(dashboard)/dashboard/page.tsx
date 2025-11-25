@@ -216,7 +216,7 @@ export default function DashboardPage() {
               </Button>
             </Link>
             {user?.is_super_admin && (
-              <Link href="/admins" className="block">
+              <Link href="/register" className="block">
                 <Button
                   variant="outline"
                   className="w-full justify-start gap-3 h-12 hover:border-emerald-500 hover:text-emerald-600"

@@ -14,33 +14,28 @@ export default function Navbar() {
 
   // Dropdown menu items
   const healthConditionsItems = [
-    { label: "Heart Disease", href: "/health-conditions/heart-disease", description: "Cardiovascular health information" },
-    { label: "Diabetes", href: "/health-conditions/diabetes", description: "Managing blood sugar levels" },
-    { label: "Mental Health", href: "/health-conditions/mental-health", description: "Anxiety, depression & more" },
-    { label: "Cancer", href: "/health-conditions/cancer", description: "Prevention and treatment" },
-    { label: "View All", href: "/health-conditions" },
+    { label: "Heart Disease", href: "/healthConditions/heart-disease", description: "Cardiovascular health information" },
+    { label: "Diabetes", href: "/healthConditions/diabetes", description: "Managing blood sugar levels" },
+    { label: "Cancer", href: "/healthConditions/cancer", description: "Prevention and treatment" },
   ];
 
   const wellnessItems = [
     { label: "Nutrition", href: "/wellness/nutrition", description: "Healthy eating & diet plans" },
     { label: "Fitness", href: "/wellness/fitness", description: "Exercise & workout tips" },
-    { label: "Sleep", href: "/wellness/sleep", description: "Better sleep habits" },
     { label: "Stress Management", href: "/wellness/stress", description: "Relaxation techniques" },
-    { label: "View All", href: "/wellness" },
   ];
 
   const researchItems = [
-    { label: "Latest Studies", href: "/research/latest", description: "Recent medical findings" },
-    { label: "Clinical Trials", href: "/research/trials", description: "Ongoing research" },
-    { label: "Medical News", href: "/research/news", description: "Healthcare updates" },
-    { label: "View All", href: "/research" },
+    { label: "Latest Studies", href: "/medicalresearch/latest", description: "Recent medical findings" },
+    { label: "Clinical Trials", href: "/medicalresearch/trials", description: "Ongoing research" },
+    { label: "Medical News", href: "/medicalresearch/news", description: "Healthcare updates" },
   ];
 
   const connectItems = [
-    { label: "About Us", href: "/about", description: "Our mission & team" },
-    { label: "Contact", href: "/contact", description: "Get in touch" },
-    { label: "Community", href: "/community", description: "Join discussions" },
-    { label: "Careers", href: "/careers", description: "Work with us" },
+    { label: "About Us", href: "*", description: "Our mission & team" },
+    { label: "Contact", href: "*", description: "Get in touch" },
+    { label: "Community", href: "*", description: "Join discussions" },
+    { label: "Careers", href: "*", description: "Work with us" },
   ];
 
   return (
